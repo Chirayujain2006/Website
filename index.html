@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chirayu Jain Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#awards-section" class="nav-link"><span>Awards & Recognization</span></a></li>
+			  <li class="nav-item"><a href="#life-section" class="nav-link"><span>Personal Life</span></a></li>
+			  <li class="nav-item"><a href="#training-section" class="nav-link"><span>Training & Workshops</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/photome.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Chirayu Jain</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Freelancer  ',
+						'Business Coach  ',
+						'Public Speaker  ',
+						'UI/UX Designer  ',
+						'Web Developer  ',
+						'Chef ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/@ChirayuOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/Chirayujain2006" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.JPG" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Chirayu Jain</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>0- 1 yrs</span></p>
+										<p><span class="title-s">Address: </span> <span>Noida, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Adobe Photososhop</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>HTML</span> <span class="pull-right">95%</span>
+
+								<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>	
+
+									<span>Canva</span> <span class="pull-right">95%</span>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="95" aria-valuemin="0"
+													aria-valuemax="100"></div>
+											</div>
+										
+											<span>Blogging</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+											<span>MS OFFICE</span> <span class="pull-right">70%</span>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95" aria-valuemin="0"
+													aria-valuemax="100"></div>
+											</div>
+
+									<span>Adobe Illustrator</span> <span class="pull-right">55%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>CSS</span> <span class="pull-right">55%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+
+										<span>Javascript</span> <span class="pull-right">55%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="95" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+                                     
+									<span>Data Visualization</span> <span class="pull-right">20%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">20%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+									<span>PYTHON</span> <span class="pull-right">10%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p style="text-align:left;">
+									Highly Motivated individual with a strong passion for Continuous learning & Personal Development. 
+									Proficient in Various Technologies, I have a keen Interest in Expanding my Knowledge & Skills across Multiple Domains. 
+									My journey so far includes Diverse Jobs, Internships that have provided me with Practical Experience and Valuable Insights into Different Industries.
+									<br>Holding a Diploma in Graphic Design & Certification in Web Design. Microsoft Certified for works in Data Analytics & AI. Honored with Six Sigma Yellow Belt, & Enriched by various workshops, showcasing my unparalleled expertise in structured Problem-Solving and Effective Communication.
+									<br>In addition to my Technical pursuits, I have taken on roles as a <b><br>Business Coach</b>, helping others to achieve their Professional Goals. 
+								    I am also actively engaged in various Management Programs, equipping myself with essential Leadership & Organizational Skills. 
+									My culinary passion has led me to work as a Trainee Chef, where I have honed my Skills in the Kitchen.
+								     I am excited to bring my Diverse Skill Set, Enthusiasm for Learning & Dedication to Excellence to any Professional Environment.
+									 </p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> Business Intelligence & Data Analytics
+									<li class="d-flex"><span>Domain:</span> <span>Digital Marketing &amp; BFSI </span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Business Administration</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, French</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Power BI &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span> Adv.Excel, Git,  Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Teaching, Music(Guitar),Exploring New Technologies </span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="2">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/chirayu-jain-2186131b8/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Data Analyst, Businees Coach with 1 year of experience driving <b>Business Strategies</b> through data-driven insights. Proven expertise in Statistical Analysis, Project Management, Negotiation & Problem-solving.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		
+		<div class="resume-wrap ftco-animate">
+		<span class="date">Job</span>		
+		<div class="row-md-6">
+					<div class="row-md-6">
+						<h2>10 July 2024 - Present (Part Time) </h2>
+						<h3>Business Coach</h3>
+						<span class="position">Skill Empire</span>
+						<p class="mt-4">Voltas Limited is a leading Multinational corporation based in India. It operates in diverse sectors including HVAC, Refrigeration, Electro-Mechanical Projects with a strong presence in over 30 countries. It has built a reputation for delivering High-Quality Products and Services, Driving Innovation, and Maintaining a customer-centric approach. 
+							<ul> 
+								<li>Customer Relationship Management: Build and maintain strong relationships with clients to understand their needs and provide tailored solutions.</li>
+								<li>Sales Strategy & Execution: Develop and Implement Sales Strategies to Achieve or Exceed Sales Targets also Identifying New Business Opportunities and Generate Leads through Market Research, Networking.</li>
+								<li>Sales Presentations & Negotiations: Prepare and Deliver compelling Sales Presentations to clients as well as Negotiate Contracts and Terms of Sale to close deals effectively.</li>
+								<li>Team Collaboration: Work closely with the Marketing, Product Development & Customer Service Teams to ensure a seamless customer experience, need to Participate in Team Meetings and Contribute to Strategic Discussions.</li>
+						
+							
+								</ul>
+							</p>
+						</div>
+	
+					</div>  
+					
+					<div class="row-md-6">
+					<div class="resume-wrap ftco-animate">
+					<h2>May 2024 - May 2024 (15 Days) </h2>
+						<h3>Sales Representative</h3>
+						<span class="position">Voltas</span>
+						<p class="mt-4">Voltas Limited is a leading Multinational corporation based in India. It operates in diverse sectors including HVAC, Refrigeration, Electro-Mechanical Projects with a strong presence in over 30 countries. It has built a reputation for delivering High-Quality Products and Services, Driving Innovation, and Maintaining a customer-centric approach. 
+							<ul> 
+								<li>Customer Relationship Management: Build and maintain strong relationships with clients to understand their needs and provide tailored solutions.</li>
+								<li>Sales Strategy & Execution: Develop and Implement Sales Strategies to Achieve or Exceed Sales Targets also Identifying New Business Opportunities and Generate Leads through Market Research, Networking.</li>
+								<li>Sales Presentations & Negotiations: Prepare and Deliver compelling Sales Presentations to clients as well as Negotiate Contracts and Terms of Sale to close deals effectively.</li>
+								<li>Team Collaboration: Work closely with the Marketing, Product Development & Customer Service Teams to ensure a seamless customer experience, need to Participate in Team Meetings and Contribute to Strategic Discussions.</li>
+
+						
+							
+								</ul>
+							</p>
+						</div>
+	
+					</div>  
+					
+					<div class="row">
+						<div class="row-md-6">
+							<div class="resume-wrap ftco-animate">
+								<span class="date">Internships</span>
+								<h2>10 July 2024 - Present </h2>
+								<h3>Position of Legal Intern</h3>
+								<span class="position">Vanillakart</span>
+								<p class="mt-4">Vanillakart, specializes in unconventional technology-enabled marketing. It  recognizes the need for innovative solutions beyond generic posts and paid boosts.
+									<ul> 
+										<li>Drafting MOUs: Assist in drafting, reviewing, and finalizing Memorandums of Understanding (MOUs) with educational institutions and other partners.</li>
+										<li>Drafting Advisory Agreement and Compliances: Prepare, review, and negotiate advisory agreements to ensure they meet legal standards and company requirements.</li>
+										<li>Compliances & External Liaison:Support the legal team in ensuring compliance with all applicable laws, regulations, and internal policies. Also act as a liaison with external legal counsel and other relevant entities as required. </li>
+										<li>Negotiations and Communications: Assist in negotiations and communications with educational institutions and other partners.</li>
+									</ul>
+								</p>
+							</div>
+		
+						</div>
+						
+
+				        <div class="row-md-6">
+					    <div class="resume-wrap ftco-animate">
+						<h2>18 May 2024 - Present (Part Time)</h2>
+						<h3>Business Development Specialist </h3>
+						<span class="position">VQMS</span>
+						<p class="mt-4">VQMS is specialized in Quality Management and Business Excellence Solutions. Works, Leverages on cutting-edge methodologies and industry best practices to drive Continuous Improvement & Innovation. Renowned for its Expertise in delivering comprehensive Consulting, Training, and Certification Services. Organizations has Global Partners to enhance Operational Efficiency and Achieve Sustainable Growth. 
+
+							<ul>
+								<li>Client Acquisition & Relationship Management: Identifing & Pursuing New Business Opportunities to expand the Client Base, Build and maintain Strong, Long-Term Relationships with Clients to understand their needs and provide tailored solutions.</li>
+								<li>Market Research & Analysis: Conduct comprehensive market research to identify Trends, Competitor Activities, and Potential Growth areas. Analyzing market data to develop Strategic Business Development Plans and Initiatives also play key role.
+								<li>Performance Tracking & Reporting: Monitor, Track Business Development activities and performance metrics as well as Prepare regular reports for Senior Management to provide Insights & Recommendations.</li>
+								<li>Training & Development: Staying update on various Industry Trends, best practices and New Business Development Techniques and Participate in Professional Development Programs to enhance Skills and Knowledge.</li>
+
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row-md-6">
+				<div class="resume-wrap ftco-animate">
+					<h2>13 May 2024 - 19 June 2024</h2>
+					<h3>Position of Social Entrepreneurship</h3>
+					<span class="position">Hamari Pahchan</span>
+					<p class="mt-4">Hamari Pachan a prominent Non-Profit organization dedicated to addressing & alleviating various social issues in India. Committed to fostering positive change across a broad spectrum of causes including Education, Women's Empowerment, Healthcare, Environmental Sustainability & Child Welfare. By leveraging Volunteer efforts, Partnerships & Innovative Solutions, it empowers Individuals and Communities to improve their Quality of Life and secure their brighter future.
+
+						<ul>
+							<li>Community Engagement & Outreach: Engage with local communities to understand their Needs & Challenges, Build strong relationships with Community Members, Stakeholders and Beneficiaries and at last Organize Community Meetings, Workshops and awareness Campaigns.</li>
+							<li>Resource Mobilization and Fundraising: Develop and implement Fundraising Strategies to secure Financial Support for Projects and write grant Proposals and Manage relationships with Donors and Sponsors.</li>
+							<li>Advocacy and Awareness: Advocate for Social Change & Policy reforms to address systemic issues. Create & Distribute educational materials to raise awareness about social causes and use Social Media, other platforms to promote the organization’s work to create an Impact.</li>
+							<li>Sustainable Development: Promote sustainable practices & solutions in all projects also to ensure projects contribute to Long-Term community Development. Lastly integrate Environmental Sustainability into project Planning & Implementation.</li>
+
+						</ul>
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2024-2027</span>
+    					<h2>Bachelor of Business Administration</h2>
+    					<span class="position">University</span>
+    					
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2024</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Jaypee Public School, Noida</span>
+    				
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/drive/folders/1hkwp-zZpqOPIliInk28Kt0OsxxbmIiex?usp=sharing" class="btn btn-primary py-4 px-5">Online Resume & Work's</a></p> 
+				
+				</div>
+    		</div>
+    	</div>
+    </section>
+	
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+			<p>Centered Heading Below are the sample Data Analytics project on Power BI.</p>
+          </div>
+        </div>
+        
+		<div class="row d-flex justify-content-center">  
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Chirayujain2006/Power-BI/blob/main/Power%20BI%20%20Dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href=https://github.com/Chirayujain2006/Power-BI/blob/main/Power%20BI%20%20Dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
+                <p>Designed a Power BI dashboard for self to Track and Analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="2">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="300">0</strong>
+                <span>Connections</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Chirayujain2006" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Noida (UP), India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+919953580915</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">Chirayujain2006@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+				<! In Progess  (Comment)!>
+    		
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/nhA52EAjZHApKBy77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/chirayu-jain-2186131b8/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.facebook.com/people/Chirayu-Jain/61559402499081/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/chirayujain2006/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
